@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Bus bus = new ElectricBus(0.001, 0.1);
+        bus.refuel(1);
+        System.out.println("Резерв: " + bus.powerRevers());
+        System.out.println("Едем 50 км: " + bus.run(50));
+        System.out.println("Резерв: " + bus.powerRevers());
+        System.out.println("Едем 900 км: " + bus.run(900));
+        System.out.println("Резерв: " + bus.powerRevers());
+        System.out.println("Едем 100 км: " + bus.run(100));
     }
 }
